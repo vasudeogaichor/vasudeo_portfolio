@@ -1,1 +1,0 @@
-web: gunicorn vasudeo_portfolio.wsgi --log-file -
