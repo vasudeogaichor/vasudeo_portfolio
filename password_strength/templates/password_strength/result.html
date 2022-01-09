@@ -1,0 +1,32 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="container text-center">
+
+  <h1 class="font-weight-bold">Password Strength Result</h1>
+
+  <!-- <h3><a href="">About</a></h3> -->
+
+<form>
+  <div class="form-group" >
+    <label" class="font-italic">Your password</label>
+    <h4>{{ password }}</h4>
+  </div>
+</form>
+
+<h1>Password Strength : {{ strength }}</h1>
+
+<h3 class="text-info">{{ message }}</h3>
+
+<form action="{% url 'password_strength:password_strength_home' %}">
+   <button type="submit" class="btn btn-primary">Try again!</button>
+</form>
+
+</div>
+
+{% endblock %}

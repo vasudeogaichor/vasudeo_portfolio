@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7fea)agzt#$+opj(@%htikxso#%(b-6os8n56a9uw*o9&yjm75'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['13.235.17.120','127.0.0.1']
 
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'portfolio',
+    'password_strength',
 ]
 
 MIDDLEWARE = [
