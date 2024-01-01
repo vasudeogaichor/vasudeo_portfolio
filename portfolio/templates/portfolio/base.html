@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+  <link rel="stylesheet" href="{% static 'portfolio/custom.css' %}">
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -24,7 +24,7 @@
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/Logo2.png" %}" width="30" height="30" class="d-inline-block align-top" alt="vasu's logo">
+        <img src="{% static 'portfolio/Logo2.png' %}" width="30" height="30" class="d-inline-block align-top" alt="vasu's logo">
         <span>Vasudeo Gaichor</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,13 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% static "portfolio/Vasudeo_Gaichor_Updated.pdf" %}">Resume</a>
+            <a class="nav-link" href="{% static 'portfolio/Vasudeo_Resume.pdf' %}">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/vasudeo-gaichor-9a4b361a1" target="_blank">LinkedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/vasudeo-gaichor" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/GaichorTech" target="_blank">Github</a>
           </li>
           <li>
             <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>

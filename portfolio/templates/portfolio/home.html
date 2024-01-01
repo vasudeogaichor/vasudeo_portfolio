@@ -6,7 +6,7 @@
 
 <div class="row justify-content-center my-3">
   <div class="col-5">
-    <img src="{% static 'portfolio/vasudeo.jpg' %}" class="img-fluid">
+    <img src="{% static 'portfolio/portfolio_image.jpg' %}" class="img-fluid">
   </div>
 </div>
 
@@ -19,22 +19,17 @@
 <h2 class="mt-5">Portfolio</h2>
 <hr>
 <div class="row">
-  <!-- {% for project in projects %} -->
+  {% for project in projects %}
   <div class="col-lg-4 col-md-6">
 
-    <!-- {% if project.url %} -->
-    <a href="{{ project.url }}">
+    <a href="{% url 'password_strength:password_strength_home' %}">
       <img src="{{ project.image.url }}" class="img-fluid mb-2">
     </a>
-    <!-- {% else %} -->
-
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    <!-- {% endif %} -->
-    <!-- <h3>{{ project.title }}</h3> -->
-    <!-- <p>{{ project.description }}</p> -->
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
 
   </div>
-  <!-- {% endfor %} -->
+  {% endfor %}
 </div>
 
 {% endblock %}
