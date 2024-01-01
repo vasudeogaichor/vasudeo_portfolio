@@ -1,6 +1,9 @@
-from django.shortcuts import render
-from .models import Project
+from django.shortcuts import redirect
 
 def home(request):
-    projects = Project.objects.all()
-    return render(request, 'portfolio/home.html', {'projects':projects})
+    new_url = 'https://portfolio-nine-chi-60.vercel.app/'
+    return redirect(new_url)
+
+def blogs(request):
+    new_url = 'http://54.234.18.211:3000'
+    return redirect(new_url)
