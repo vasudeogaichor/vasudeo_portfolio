@@ -22,7 +22,6 @@ from portfolio import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('blog/', include('blog.urls')),
     path('password_strength/',include('password_strength.urls'))
 ]
 
